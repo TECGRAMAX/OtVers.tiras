@@ -75,7 +75,7 @@ const Hoja = () => {
         { image: diesiciete, pagina: 'Pagina-17' },
         { image: diesiocho, pagina: 'Pagina-18' },
         { image: diesinueve, pagina: 'Pagina-19' },
-        { image: veinte, pagina: 'Pagina-20' }
+        { image: veinte, pagina: 'Pagina-20' },
         { image: veintiuno, pagina: 'Pagina-21' },
         { image: veintidos, pagina: 'Pagina-22' },
         { image: veintitres, pagina: 'Pagina-23' },
