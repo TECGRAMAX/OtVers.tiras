@@ -52,9 +52,9 @@ const Hoja = () => {
     };
 
     const tarjetas = [
-        { image: portada, pagina: 'portada' },
-        { image: anuncio, pagina: 'anuncio' },
-        { image: destitulada, pagina: 'destitulada' },
+        { image: portada, pagina: 'PORTADA' },
+        { image: anuncio, pagina: 'PROPAGANDA' },
+        { image: destitulada, pagina: 'DESTITULADA' },
         { image: uno, pagina: 'Pagina-01' },
         { image: dos, pagina: 'Pagina-02' },
         { image: tres, pagina: 'Pagina-03' },
@@ -86,7 +86,6 @@ const Hoja = () => {
         { image: veintinueve, pagina: 'Pagina-29' },
         { image: treinta, pagina: 'Pagina-30' },
         { image: treintaiuno, pagina: 'Pagina-31' },
-        { image: treintaidos, pagina: 'Pagina-32' },
         { image: vacio, pagina: '-' },
     ];
 
