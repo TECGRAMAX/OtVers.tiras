@@ -31,14 +31,6 @@ const Noticias = () => {
             autor:'-Autor',
             urlv:['#'],
         },
-        {
-            titular:'TITULO',
-            subtitulo:'Subtítulo',
-            noticia:'NOTICIA',
-            image:[img1],
-            autor:'-Autor',
-            urlv:['#'],
-        },
     ]
 
     const mantener = (e) => {
