@@ -1,5 +1,5 @@
 import './estilos/noticias.css'
-import lilix from '../assets/noticiasimg/lilix.webp'
+import lilix from '../assets/integrados/lilix.webp'
 import img1 from '../assets/actomos.png'
 
 import piggyLogo from 'https://www.facebook.com/photo/?fbid=122145912518836879&set=a.122093148932836879'
