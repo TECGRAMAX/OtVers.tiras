@@ -230,7 +230,8 @@ const Hoja = () => {
             <section className="tomo">
                 {/* Tarjeta Principal */}
                 <div className="card-principal">
-                    <img src={tarjetas[0].image} alt="Principal" />
+                    {/* ⬇️ CAMBIO: portada ahora con loading="lazy" */}
+                    <img src={tarjetas[0].image} alt="Principal" loading="lazy" />
                     <div className="contenido">
                         <h2>UN EVENTO DECISIVO</h2>
 
@@ -281,7 +282,13 @@ const Hoja = () => {
                         {tarjetas.map((card, index) => (
                             <div key={index} className="card" onClick={() => setTarjetaActiva(index)}>
                                 <div className="img">
-                                    <img width="100%" src={card.image} alt={card.pagina} />
+                                    {/* ⬇️ CAMBIO: todas las imágenes de las tarjetas con loading="lazy" */}
+                                    <img
+                                      width="100%"
+                                      src={card.image}
+                                      alt={card.pagina}
+                                      loading="lazy"
+                                    />
                                 </div>
                             </div>
                         ))}
@@ -297,9 +304,11 @@ const Hoja = () => {
                     <div className="contenedor-expandido">
                         <div className="contenido-expandido">
                             <p>{tarjetas[tarjetaActiva].pagina}</p>
-                            <img 
-                                src={tarjetas[tarjetaActiva].image} 
-                                alt={`Tarjeta ${tarjetaActiva + 1}`}
+                            {/* ⬇️ CAMBIO: imagen expandida también con loading="lazy" */}
+                            <img
+                              src={tarjetas[tarjetaActiva].image}
+                              alt={`Tarjeta ${tarjetaActiva + 1}`}
+                              loading="lazy"
                             />
                             <p>{`Hoja ${tarjetaActiva + 1} de ${tarjetas.length}`}</p>
                         </div>

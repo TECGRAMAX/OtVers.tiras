@@ -1,9 +1,28 @@
 import './estilos/noticias.css'
+import lilix from '../assets/noticiasimg/lilix.webp'
 import img1 from '../assets/actomos.png'
+
+import piggyLogo from 'https://www.facebook.com/photo/?fbid=122145912518836879&set=a.122093148932836879'
+import facebookLogo from '../assets/facebook.png'
+import instagramLogo from '../assets/instagram.png'
+import twitterLogo from '../assets/donarx.png'
 
 const Noticias = () => {
 
     const tarjetas = [
+        {
+          titular: 'Lilix de The piggy draws',
+          subtitulo: 'Un personaje que la marca The piggy draws nos ha brindado para incluir en otvers.',
+          noticia: 'Lilix es una Polymyr, extraterrestre de composición corporal libre del componente mineral óseo, siendo una masa libre y fácilmente moldiable; también cambia de color tanto de piel como de cabellos',
+          image: lilix,
+          autor: 'The piggy draws',
+          autorImg: piggyLogo,
+          redes: [
+            { url: 'https://www.facebook.com/profile.php?id=61575106370554', icon: facebookLogo },
+            { url: 'https://www.instagram.com/the.piggy.draws', icon: instagramLogo },
+            { url: 'https://twitter.com/thepiggydraws', icon: twitterLogo },
+          ],
+        },
         {
             titular:'TITULO',
             subtitulo:'Subtítulo',
