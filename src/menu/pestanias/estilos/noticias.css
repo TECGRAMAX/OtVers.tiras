@@ -1,5 +1,3 @@
-
-
 .Noticias{
     width: 87%;
     height: auto;
@@ -61,11 +59,11 @@
     flex-direction: column;
 }
 .cartas .carta .titular h1{
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing:5px;
 }
 .cartas .carta .titular h2{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing:3px;
 }
@@ -77,17 +75,21 @@
     padding: 1rem;
     overflow: hidden;
     display: grid;
-    grid-template-columns: [linea-1] 0.3fr [linea-2] 0.7fr;
+    grid-template-columns: [linea-1] 0.6fr [linea-2] 0.4fr;
     grid-template-rows: [fila-1] 1fr;
 }
 
 @keyframes recorrerImagen {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(-10%); }
-  100% { transform: translateX(0); }
+  0% { transform: translateX(0%); }
+  50% { transform: translateX(40%); }
+  100% { transform: translateX(0%); }
 }
 
 .noticia img {
+  grid-column-start: linea-1;
+  grid-column-end: linea-2;
+  grid-row-start: fila-1;
+  grid-row-end: fila-2;
   animation: recorrerImagen 8s ease-in-out infinite;
   filter: brightness(0.95) contrast(1.05);
   transition: transform 0.3s ease;
@@ -105,18 +107,41 @@
     grid-row-start: fila-1;
     grid-row-end: fila-2;
     width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: [linea-1] 1fr;
+    grid-template-rows: [fila-1] 0.6fr [fila-2] 0.4fr;
 }
-.articulo .noticia{
+.articulo h2{
+    grid-column-start: linea-1;
+    grid-column-end: linea-2;
+    grid-row-start: fila-1;
+    grid-row-end: fila-2;
+    width: 100%;
     font-size: 2vh;
     color: #ADA6A6;
-    text-align: left;
+    text-align: center;
 }
 .articulo .autor{
+    grid-column-start: linea-1;
+    grid-column-end: linea-2;
+    grid-row-start: fila-2;
+    grid-row-end: fila-3;
     font-size: 2vh;
     padding: 0 10px;
     font-weight: 600;
     text-align: right;
+    align-items: botom;
     color: #C8C8C8;
+}
+.autor .autorImg{
+   animation: none;
+   width: 10rem;
+}
+
+.articulo .redImg{
+   animation: none;
+   width: 2rem;
 }
 
 /* 💻 Tablets pequeñas y pantallas medianas (~900px) */
