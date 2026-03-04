@@ -27,7 +27,7 @@ const Thepiggydraws = () => {
     <section className="Noticias">
       <div className="blog-container">
         {/* Imagen en la esquina superior izquierda */}
-        <img src={lilix} alt="Lilix de Polymyr" className="blog-img" />
+        <img src={lilix} alt="Lilix de Polymyr" width='500px' />
 
         {/* Texto con efecto de escritura */}
         <article className="blog-text">

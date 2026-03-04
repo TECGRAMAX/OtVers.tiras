@@ -37,7 +37,7 @@ const Noticias = () => {
           alt: 'X/Twitter',
         },
       ],
-      urlv: ['#'],
+      urlv: ['/Noticias/Pa'],
     },
     {
       titular: 'TITULO',
@@ -58,7 +58,7 @@ const Noticias = () => {
       urlv: ['#'],
     },
   ]
-
+  const navigate = useNavigate()
   const location = useLocation()
   const esRutapa = location.pathname.endsWith('/Pa')
 
@@ -88,18 +88,17 @@ const Noticias = () => {
                     <h2>{card.subtitulo}</h2>
                   </article>
                   <div
-                    onClick={() => {
-                      if (card.urlv[0] !== '#') {
-                        window.open(
-                          card.urlv[0],
-                          '_blank',
-                          'noopener,noreferrer'
-                        )
-                      }
-                    }}
-                    style={{
-                      cursor: card.urlv[0] !== '#' ? 'pointer' : 'default',
-                    }}
+                   onClick={() => {
+                        if (card.urlv[0] === '/Pa') {
+                          navigate('/Pa')   // Cambio: navegación interna en la misma pestaña con React Router
+                        } else if (card.urlv[0] !== '#') {
+                          window.open(
+                            card.urlv[0],
+                            '_blank',
+                            'noopener,noreferrer'
+                          )
+                        }
+                      }}
                   >
                     <div className="noticia">
                       <img src={card.image} alt={card.titular} />
@@ -144,3 +143,4 @@ const Noticias = () => {
 }
 
 export default Noticias
+
