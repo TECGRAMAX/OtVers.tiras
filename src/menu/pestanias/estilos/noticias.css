@@ -220,14 +220,17 @@
         grid-template-columns: [linea-1] 1fr;
         grid-template-rows: [fila-1] 0.5fr [fila-2] 0.5fr;
     }
+    .cartas .carta .noticia {
+        gap: 10px;
+    }
     .noticia img {
       width: 13rem;
     }
     .articulo h2{
-      font-size: 1.2vh;
+      font-size: 1.1vh;
     }
     .autor .autorImg {
-      width: 10rem;
+      width: 12rem;
     }
     .articulo .redImg {width: 1.7rem;}
   }
