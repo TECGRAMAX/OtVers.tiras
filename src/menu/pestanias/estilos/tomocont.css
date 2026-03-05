@@ -275,6 +275,15 @@
       width: 95%;
     }
 }
+/* 📱 iPhone 14 Pro Max, Galaxy S22 Ultra (~480px) */
+  @media (max-width: 480px) {
+        .card-principal h2{
+            font-size: 1rem;
+        }
+        .card-principal p{
+            font-size: 0.5rem;
+        }
+  }
 @media (max-width: 380px){
     .tomo{
         padding-bottom:16vh ;
