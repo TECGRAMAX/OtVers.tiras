@@ -265,7 +265,13 @@
             font-size: 1.2rem;
         }
   }
-@media (max-width: 500px){
+@media (max-width: 580px){
+    .card-principal h2{
+        font-size: 1.5rem;
+    }
+    .card-principal p{
+        font-size: 1rem;
+    }
     .tomo{
         padding-bottom:16vh ;
     }
@@ -277,14 +283,21 @@
 }
 /* 📱 iPhone 14 Pro Max, Galaxy S22 Ultra (~480px) */
   @media (max-width: 480px) {
-        .card-principal h2{
-            font-size: 0.5rem;
-        }
-        .card-principal p{
-            font-size: 0.2rem;
-        }
+    .card-principal h2{
+        font-size: 1.3rem;
+    }
+    .card-principal p{
+        font-size: 0.7rem;
+    }
   }
+
 @media (max-width: 380px){
+    .card-principal h2{
+        font-size: 1rem;
+    }
+    .card-principal p{
+        font-size: 0.5rem;
+    }
     .tomo{
         padding-bottom:16vh ;
     }
