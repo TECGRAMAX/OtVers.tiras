@@ -236,11 +236,11 @@
         padding-bottom:16vh ;
     }
     .card-principal h2{
-            font-size: 2rem;
-        }
-        .card-principal p{
-            font-size: 1.2rem;
-        }
+        font-size: 2rem;
+    }
+    .card-principal p{
+        font-size: 1.2rem;
+    }
 
     .overlay {
       left: 10%;
@@ -256,6 +256,15 @@
       width: 90%;
     }
 }
+/* 📱 especialito detergente, moto e7 plus (~580px) */
+  @media (max-width: 580px) {
+        .card-principal h2{
+            font-size: 2rem;
+        }
+        .card-principal p{
+            font-size: 1.2rem;
+        }
+  }
 @media (max-width: 500px){
     .tomo{
         padding-bottom:16vh ;
@@ -266,6 +275,15 @@
       width: 95%;
     }
 }
+/* 📱 iPhone 14 Pro Max, Galaxy S22 Ultra (~480px) */
+  @media (max-width: 480px) {
+        .card-principal h2{
+            font-size: 0.5rem;
+        }
+        .card-principal p{
+            font-size: 0.2rem;
+        }
+  }
 @media (max-width: 380px){
     .tomo{
         padding-bottom:16vh ;
