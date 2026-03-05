@@ -11,9 +11,10 @@ function App() {
           <Menu />
           <Routes>
             <Route path="/" element={<Navigate to="Tomos" />} />
+            <Route path="/" element={<Navigate to="Noticias" />} />
 
             <Route path="/Tomos/*" element={<Tomos />} />
-            <Route path="/Noticias" element={<Noticias />} />
+            <Route path="/Noticias/*" element={<Noticias />} />
             <Route path="/Dibujos" element={<Dibujos />} />
           </Routes>
         </div>

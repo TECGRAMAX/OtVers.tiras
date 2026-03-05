@@ -1,0 +1,103 @@
+import '../estilos/blog.css'
+import perfil from '../../assets/integrados/blog/tpd-a.webp'
+import portada from '../../assets/integrados/blog/tpd-b.webp'
+import boceto from '../../assets/integrados/blog/lilixsketch.webp'
+import lilix from '../../assets/integrados/blog/lilix-c.webp'
+import lilixidioma from '../../assets/integrados/blog/lilix-d.webp'
+import lilixhabilidad from '../../assets/integrados/blog/lilix-b.webp'
+import lilixsaiyan from '../../assets/integrados/lilix.webp'
+
+const Blog = () => {
+  const textoIntro = `<b>Gracias al permiso del autor y su marca «The piggy draws» será añadida a otvers su personaje «Lilix de Polymyr».<br/>
+    Se ha llegado a un acuerdo con la marca para incluir a la extraterrestre Lilix en otvers.</b>`
+
+  const subtitulo = `<b>Explica su autor:</b>`
+
+  const textoRaza = `<b>De la raza Polymyr, raza actualmente casi extinta, solo quedan unos cuantos y lilix.</b>`
+
+  const textoIdioma = `<b>El lenguaje particularmente de Lilix, es absurdamente técnico y detallado.</b>`
+
+  const textoHabilidad = `<b>La composición corporal de su especie es libre del componente mineral óseo, siendo así de una masa libre y fácilmente moldeable; también cambia o modifica a voluntad la melamina de su cuerpo, adquiriendo el color que desee tanto en cabello o piel.</b>`
+
+  const textoFinal = `<div class="headline-top"><b>¿Cómo aparecerá Lilix en OT.VERS.?</b></div>
+                      <div class="headline-bottom"><b>¡¡NO SE LO PIERDAN!!</b></div>`
+
+  return (
+    <div className="contenedor">
+      <div className="acomodo">
+        <img src={portada} alt="Portada" className="portadaimg" />
+        <img src={perfil} alt="Perfil" className="perfilimg" />
+      </div>
+
+      <div className="introsection">
+        <img src={boceto} alt="Boceto" className="bocetoimg" />
+        <div className="introtext" dangerouslySetInnerHTML={{ __html: textoIntro }} />
+      </div>
+
+      <div className="contenido">
+        <div className="subtitulo" dangerouslySetInnerHTML={{ __html: subtitulo }} />
+
+        <div className="sectionleft">
+          <div className="text" dangerouslySetInnerHTML={{ __html: textoRaza }} />
+          <img src={lilix} alt="Lilix" className="imgmedium" />
+        </div>
+
+        <div className="sectionbelow">
+          <img src={lilixidioma} alt="Lilix Idioma" className="imgwide" />
+          <div className="text" dangerouslySetInnerHTML={{ __html: textoIdioma }} />
+        </div>
+
+        <div className="sectionbelow">
+          <img src={lilixhabilidad} alt="Lilix Habilidad" className="imgwide" />
+          <div className="text" dangerouslySetInnerHTML={{ __html: textoHabilidad }} />
+        </div>
+
+
+        <div className="sectionheadline">
+          <img src={lilixsaiyan} alt="Lilix Saiyan" className="headlineimg" />
+          <div className="headlinetext" dangerouslySetInnerHTML={{ __html: textoFinal }} />
+        </div>
+
+
+      </div>
+    </div>
+  )
+}
+
+export default Blog
+/*
+
+
+
+
+
+
+ // Estado para el efecto de "escribir"
+  const [texto, setTexto] = useState("")
+
+  useEffect(() => {
+    let i = 0
+    const intervalo = setInterval(() => {
+      setTexto(textoCompleto.slice(0, i))
+      i++
+      if (i > textoCompleto.length) clearInterval(intervalo)
+    }, 50) // velocidad de escritura (ms)
+    return () => clearInterval(intervalo)
+  }, [])
+
+  return (
+    <section className="Noticias">
+      <div className="blog-container">
+        {/* Imagen en la esquina superior izquierda *//*
+        <img src={lilix} alt="Lilix de Polymyr" width='500px' />
+
+        {/* Texto con efecto de escritura *//*
+        <article className="blog-text">
+          <p>{texto}</p>
+        </article>
+      </div>
+    </section>
+  )
+}
+*/
+

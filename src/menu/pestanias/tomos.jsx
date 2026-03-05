@@ -21,13 +21,14 @@ const Tomos = () => {
         },
     ];
 
+    const esRutaCero = location.pathname.endsWith('/Cero');  // Detecta si estás en "/Cero"
+
     const toggleSubmenu = (e) => {
         e.preventDefault();
         setMostrarSubmenu((prev) => !prev);
-    };
-
-    const esRutaCero = location.pathname.endsWith('/Cero');  // Detecta si estás en "/Cero"
-
+    };//  evita el comportamiento por defecto del evento (por ejemplo, que un enlace <a> recargue la página o navegue a otra URL).
+    
+//DONACIONES:
     const ua = navigator.userAgent;
     const cbu = "1430001713046954610018";
     const dolarTag = "197328agosto";
@@ -100,6 +101,7 @@ const Tomos = () => {
 
       alert("Dolar Tag para transferir: " + dolarTag);
     };
+//_______________________________________
 
     return (
         <>
@@ -117,8 +119,6 @@ const Tomos = () => {
                             const almoadilla = noHayEnlace
                                 ? { onClick: mantener, style: { cursor: 'default' } }
                                 : { target: '_blank', href: card.urlv };
-
-
                                 
                             return (
                                 <div key={index} className="card">
