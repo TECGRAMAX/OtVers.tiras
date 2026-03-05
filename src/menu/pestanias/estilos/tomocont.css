@@ -19,12 +19,14 @@
   align-items: center;
   margin-bottom: 2rem;
 }
+.card-principal .contenido{
+    background: none;
+}
 .card-principal h2{
     font-size: 2.7rem;
 }
 .card-principal p{
-    font-size: 2rem;
-    background: none; /* ✅ asegura que no se ponga blanco */
+    font-size: 1.5rem;
 }
 
 .card-principal img {

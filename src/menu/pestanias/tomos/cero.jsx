@@ -234,9 +234,7 @@ const Hoja = () => {
                     <img src={tarjetas[0].image} alt="Principal" loading="lazy" />
                     <div className="contenido">
                         <h2>UN EVENTO DECISIVO</h2>
-
-                        <div>
-
+                        <div className="presentacion">
                             <p style={{ marginTop: '60px' }}>
                                 Este evento desató una cadena de cambios en tiempos futuros..., 
                                 una pelea de baja clase y sin importancia, que define el destino de tres especies..., de tres familias.
