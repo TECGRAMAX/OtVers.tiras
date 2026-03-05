@@ -206,7 +206,7 @@
 /* 📱 especialito detergente, moto e7 plus (~580px) */
   @media (max-width: 580px) {
     .cartas .carta .titular h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .cartas .carta .titular h2{
         font-size: 0.7rem;
@@ -221,16 +221,14 @@
         grid-template-rows: [fila-1] 0.5fr [fila-2] 0.5fr;
     }
     .noticia img {
-      width: 10rem;
+      width: 12rem;
     }
     .articulo h2{
-      font-size: 1vh;
+      font-size: 1.2vh;
     }
     .autor .autorImg {
-      width: 5rem;
+      width: 7rem;
     }
-
-    .articulo .redImg {width: 1rem;}
   }
 
 /* 📱 iPhone 14 Pro Max, Galaxy S22 Ultra (~480px) */
