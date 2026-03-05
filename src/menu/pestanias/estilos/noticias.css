@@ -203,6 +203,36 @@
     .articulo .redImg {width: 1.5rem;}
   }
 
+/* 📱 especialito detergente, moto e7 plus (~580px) */
+  @media (max-width: 580px) {
+    .cartas .carta .titular h1{
+        font-size: 2.3rem;
+    }
+    .cartas .carta .titular h2{
+        font-size: 0.7rem;
+    }
+    @keyframes recorrerImagen {
+      0% { transform: translateX(0%); }
+      50% { transform: translateX(7%); }
+      100% { transform: translateX(0%); }
+    }
+    .noticia .articulo{
+        grid-template-columns: [linea-1] 1fr;
+        grid-template-rows: [fila-1] 0.5fr [fila-2] 0.5fr;
+    }
+    .noticia img {
+      width: 10rem;
+    }
+    .articulo h2{
+      font-size: 1vh;
+    }
+    .autor .autorImg {
+      width: 5rem;
+    }
+
+    .articulo .redImg {width: 1rem;}
+  }
+
 /* 📱 iPhone 14 Pro Max, Galaxy S22 Ultra (~480px) */
   @media (max-width: 480px) {
     .cartas .carta .titular h1{
@@ -293,36 +323,6 @@
     }
     .autor .autorImg {
       width: 7rem;
-    }
-
-    .articulo .redImg {width: 1rem;}
-  }
-
-  /* 📱 especialito y detergente (~310px) */
-  @media (max-width: 310px) {
-    .cartas .carta .titular h1{
-        font-size: 0.7rem;
-    }
-    .cartas .carta .titular h2{
-        font-size: 0.1rem;
-    }
-    @keyframes recorrerImagen {
-      0% { transform: translateX(0%); }
-      50% { transform: translateX(7%); }
-      100% { transform: translateX(0%); }
-    }
-    .noticia .articulo{
-        grid-template-columns: [linea-1] 1fr;
-        grid-template-rows: [fila-1] 0.5fr [fila-2] 0.5fr;
-    }
-    .noticia img {
-      width: 5rem;
-    }
-    .articulo h2{
-      font-size: 0.5vh;
-    }
-    .autor .autorImg {
-      width: 5rem;
     }
 
     .articulo .redImg {width: 1rem;}
