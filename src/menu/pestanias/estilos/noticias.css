@@ -301,10 +301,10 @@
   /* 📱 especialito y detergente (~310px) */
   @media (max-width: 310px) {
     .cartas .carta .titular h1{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .cartas .carta .titular h2{
-        font-size: 0.2rem;
+        font-size: 0.1rem;
     }
     @keyframes recorrerImagen {
       0% { transform: translateX(0%); }
@@ -316,7 +316,7 @@
         grid-template-rows: [fila-1] 0.5fr [fila-2] 0.5fr;
     }
     .noticia img {
-      width: 7rem;
+      width: 5rem;
     }
     .articulo h2{
       font-size: 0.5vh;
