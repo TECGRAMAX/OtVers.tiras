@@ -258,10 +258,12 @@
 }
 /* 📱 especialito detergente, moto e7 plus (~580px) */
   @media (max-width: 580px) {
-    .card-principal p{
-        font-size: 1.5rem;
-        background: none; /* ✅ asegura que no se ponga blanco */
-    }
+        .card-principal h2{
+            font-size: 2rem;
+        }
+        .card-principal p{
+            font-size: 1.2rem;
+        }
   }
 @media (max-width: 500px){
     .tomo{
