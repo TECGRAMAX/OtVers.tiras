@@ -224,13 +224,13 @@
         gap: 10px;
     }
     .noticia img {
-      width: 13rem;
+      width: 12rem;
     }
     .articulo h2{
-      font-size: 1.1vh;
+      font-size: 1vh;
     }
     .autor .autorImg {
-      width: 12rem;
+      width: 10rem;
     }
     .articulo .redImg {width: 1.7rem;}
   }
