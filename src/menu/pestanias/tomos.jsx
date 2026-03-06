@@ -1,6 +1,6 @@
 import './estilos/tomos.css';
 import { Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, Helmet } from 'react';
 import img from './tomos/hojas/hcero/hoja-a.webp';
 import Cero from './tomos/cero.jsx';
 import donaciones from '../assets/donar.png';
@@ -106,7 +106,27 @@ const Tomos = () => {
     return (
         <>
             <Routes>
-                <Route path="Cero" element={<Cero />} />
+                <Route path="Cero" element={
+                    <>
+                        {/* 👇 CAMBIO: Metatags dinámicas para la ruta /Cero */}
+                        <Helmet>
+                            <title>Noticia - Tomo Cero</title>
+                            <meta property="og:title" content="Tomo 0 (Especial) - Un Evento Decisivo" />
+                            <meta property="og:description" content="Este es un especial que explica qué evento desató una cadena de cambios en tiempos futuros." />
+                            <meta property="og:image" content="https://ot-vers-tiras.vercel.app/imagenes/noticia1.jpg" />
+                            <meta property="og:url" content="https://ot-vers-tiras.vercel.app/Cero" />
+                            <meta property="og:type" content="article" />
+
+                            <meta name="twitter:card" content="summary_large_image" />
+                            <meta name="twitter:title" content="Tomo 0 (Especial) - Un Evento Decisivo" />
+                            <meta name="twitter:description" content="Este es un especial que explica qué evento desató una cadena de cambios en tiempos futuros." />
+                            <meta name="twitter:image" content="https://ot-vers-tiras.vercel.app/imagenes/noticia1.jpg" />
+                        </Helmet>
+                        {/* 👆 Fin de los cambios para Helmet */}
+                        
+                        <Cero />
+                    </>
+                } />
             </Routes>
 
             {!esRutaCero && ( //  Oculta la sección si la ruta es "/Cero"

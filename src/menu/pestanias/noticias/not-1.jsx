@@ -1,4 +1,5 @@
 import '../estilos/blog.css'
+import { useState, Helmet } from 'react';
 import perfil from '../../assets/integrados/blog/tpd-a.webp'
 import portada from '../../assets/integrados/blog/tpd-b.webp'
 import boceto from '../../assets/integrados/blog/lilixsketch.webp'
@@ -24,6 +25,19 @@ const Blog = () => {
 
   return (
     <div className="contenedor">
+      <Helmet>
+        <title>Blog - Lilix en OT.VERS</title>
+        <meta property="og:title" content="Lilix de Polymyr en OT.VERS" />
+        <meta property="og:description" content="Conoce a Lilix, personaje de la marca The Piggy Draws, ahora integrado en OT.VERS. Descubre su historia, habilidades y más." />
+        <meta property="og:image" content="https://ot-vers-tiras.vercel.app/imagenes/lilix-portada.jpg" />
+        <meta property="og:url" content="https://ot-vers-tiras.vercel.app/Blog" />
+        <meta property="og:type" content="article" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Lilix de Polymyr en OT.VERS" />
+        <meta name="twitter:description" content="Conoce a Lilix, personaje de la marca The Piggy Draws, ahora integrado en OT.VERS. Descubre su historia, habilidades y más." />
+        <meta name="twitter:image" content="https://ot-vers-tiras.vercel.app/imagenes/lilix-portada.jpg" />
+      </Helmet>
       <div className="acomodo">
         <img src={portada} alt="Portada" className="portadaimg" />
         <img src={perfil} alt="Perfil" className="perfilimg" />
@@ -65,39 +79,40 @@ const Blog = () => {
 }
 
 export default Blog
+
+
+
+
+
+
+
 /*
+   // Estado para el efecto de "escribir"
+    const [texto, setTexto] = useState("")
 
+    useEffect(() => {
+      let i = 0
+      const intervalo = setInterval(() => {
+        setTexto(textoCompleto.slice(0, i))
+        i++
+        if (i > textoCompleto.length) clearInterval(intervalo)
+      }, 50) // velocidad de escritura (ms)
+      return () => clearInterval(intervalo)
+    }, [])
 
+    return (
+      <section className="Noticias">
+        <div className="blog-container">
+          {/* Imagen en la esquina superior izquierda *//*
+          <img src={lilix} alt="Lilix de Polymyr" width='500px' />
 
-
-
-
- // Estado para el efecto de "escribir"
-  const [texto, setTexto] = useState("")
-
-  useEffect(() => {
-    let i = 0
-    const intervalo = setInterval(() => {
-      setTexto(textoCompleto.slice(0, i))
-      i++
-      if (i > textoCompleto.length) clearInterval(intervalo)
-    }, 50) // velocidad de escritura (ms)
-    return () => clearInterval(intervalo)
-  }, [])
-
-  return (
-    <section className="Noticias">
-      <div className="blog-container">
-        {/* Imagen en la esquina superior izquierda *//*
-        <img src={lilix} alt="Lilix de Polymyr" width='500px' />
-
-        {/* Texto con efecto de escritura *//*
-        <article className="blog-text">
-          <p>{texto}</p>
-        </article>
-      </div>
-    </section>
-  )
-}
+          {/* Texto con efecto de escritura *//*
+          <article className="blog-text">
+            <p>{texto}</p>
+          </article>
+        </div>
+      </section>
+    )
+  }
 */
 
