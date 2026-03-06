@@ -1,5 +1,6 @@
 import '../estilos/blog.css'
-import { useState, Helmet } from 'react';
+import { useState} from 'react';
+import { Helmet } from 'react';
 import perfil from '../../assets/integrados/blog/tpd-a.webp'
 import portada from '../../assets/integrados/blog/tpd-b.webp'
 import boceto from '../../assets/integrados/blog/lilixsketch.webp'
