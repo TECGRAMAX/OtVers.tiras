@@ -21,7 +21,7 @@ const Blog = () => {
 
   const textoHabilidad = `<b>La composición corporal de su especie es libre del componente mineral óseo, siendo así de una masa libre y fácilmente moldeable; también cambia o modifica a voluntad la melamina de su cuerpo, adquiriendo el color que desee tanto en cabello o piel.</b>`
 
-  const textoFinal = `<div class="headline-top"><b>¿Cómo aparecerá Lilix en OT.VERS.?</b></div>
+  const textoFinal = `<div class="headline-top"><b>¿Como aparecera Lilix en OT.VERS.?</b></div>
                       <div class="headline-bottom"><b>¡¡NO SE LO PIERDAN!!</b></div>`
 
   return (
@@ -49,8 +49,12 @@ const Blog = () => {
         <div className="introtext" dangerouslySetInnerHTML={{ __html: textoIntro }} />
       </div>
 
-      <div className="contenido">
+      <div className="sub">
         <div className="subtitulo" dangerouslySetInnerHTML={{ __html: subtitulo }} />
+      </div>
+
+      <div className="contenido">
+
 
         <div className="sectionleft">
           <div className="text" dangerouslySetInnerHTML={{ __html: textoRaza }} />
@@ -67,14 +71,16 @@ const Blog = () => {
           <div className="text" dangerouslySetInnerHTML={{ __html: textoHabilidad }} />
         </div>
 
+      </div>
+
+      <div className="futer">
 
         <div className="sectionheadline">
           <img src={lilixsaiyan} alt="Lilix Saiyan" className="headlineimg" />
           <div className="headlinetext" dangerouslySetInnerHTML={{ __html: textoFinal }} />
         </div>
-
-
       </div>
+
     </div>
   )
 }

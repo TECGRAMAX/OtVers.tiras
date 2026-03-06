@@ -1,9 +1,23 @@
+@font-face {
+  font-family: 'Saiyan-Sans';
+  src: url('../../assets/tipografias/Saiyan-Sans.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Heroes-Assemble';
+  src: url('../../assets/tipografias/heroesassembleexpand2.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Perpetua';
+  src: url('../../assets/tipografias/Perpetua-Bold.ttf') format('truetype');
+}
+
+
 .contenedor {
   width: 100%;
   max-width: 50rem;
   margin: 0 auto;
   font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+  background-color: #000;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -38,9 +52,9 @@
 .introsection {
   display: flex;
   align-items: flex-start;
-  gap: 3rem;
-  padding: 1.3rem;
-  background: #fff;
+  gap: 2rem;
+  padding: 1rem;
+  background: rgb(255, 174, 023, 1.0);
   border-radius: 0.5rem;
   margin-top: 3rem;
   box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.1);
@@ -54,39 +68,56 @@
 }
 
 .introtext {
+  text-align: center;
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.8;
-  color: #1c1e21;
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 0.5px #000; /* borde negro grueso */
+  font-family: 'Heroes-Assemble', sans-serif; /* tipografía */
+}
+
+.sub {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: rgb(255, 174, 023, 1.0);
+  box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.1);
+}
+.subtitulo {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+  -webkit-text-stroke: 2px #000; /* borde negro grueso */
+  text-stroke: 4px #000;
+  font-family: 'Saiyan-Sans', sans-serif; /* tipografía */
   font-weight: bold;
 }
 
 .contenido {
   margin-top: 1rem;
   padding: 1.5rem;
-  background: #fff;
-  border-radius: 0.5rem;
+  background: rgb(255, 174, 023, 1.0);
   box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.1);
 }
-
-.subtitulo {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
 .sectionleft {
   display: flex;
   align-items: center;
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .sectionleft .text {
   flex: 1;
   text-align: left;
   font-weight: bold;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 2.7rem;
+  color: #fff;
+  -webkit-text-stroke: 1px #000; /* borde negro grueso */
+  text-stroke: 4px #fff;
+  font-family: 'Perpetua', sans-serif; /* tipografía */
+  font-weight: bold;
 }
 
 /* Secciones anchas corregidas */
@@ -99,7 +130,7 @@
 }
 
 .imgmedium {
-  width: 55%;          /* tamaño medio, no se toca */
+  width: 55%;        
   max-width: 20rem;
   border-radius: 0.5rem;
   object-fit: cover;
@@ -120,19 +151,30 @@
   margin-top: 1rem;
   text-align: center;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 1rem;
   line-height: 1.3;
   max-width: 90%; /* alineado con la imagen */
+  text-stroke: 4px #000;
+  font-family: 'Perpetua', sans-serif; /* tipografía */
+  font-weight: bold;
+}
+
+.futer {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: rgb(255, 174, 023, 1.0);
+  box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.1);
 }
 
 .sectionheadline {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 3rem;
+  margin-bottom: 5rem;
   padding: 2rem;
-  background: #fff;
+  background: none;
   border-top: 0.3rem solid #000;
   border-bottom: 0.3rem solid #000;
 }
@@ -146,85 +188,90 @@
 
 .headlinetext {
   flex: 1;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #111;
-  line-height: 1.4;
+  line-height: 1.3;
   text-align: center;
-  font-family: 'Georgia', serif;
+  color: #fff;
+  -webkit-text-stroke: 1.5px #000; /* borde negro grueso */
+  font-family: 'Saiyan-Sans', sans-serif; /* tipografía */
+  font-weight: bold;
 }
-
-/* 📱 especialito detergente, moto e7 plus (~580px) */
-  @media (max-width: 580px) {
-    .headlinetext {
-      flex: 1;
-      font-size: 1.3rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #111;
-      line-height: 1.2;
-      text-align: center;
-      font-family: 'Georgia', serif;
+/* 📱 algo de por ahí (~700px) */
+  @media (max-width: 700px) {
+    .introtext {
+      font-size:1.7rem ;
+    }
+    .subtitulo {
+      font-size: 3rem;
+    }
+    .sectionleft .text,
+    .headlinetext{
+      font-size: 2rem;
     }
   }
-/* 📱 Galaxy Fold, iPhone Plus (~560px) */
-  @media (max-width: 560px) {
-  	.introtext {
-	  flex: 1;
-	  font-size: 1rem;
-	  line-height: 1.8;
-	  color: #1c1e21;
-	  font-weight: bold;
-	}
-	.sectionleft .text {
-	  flex: 1;
-	  text-align: left;
-	  font-weight: bold;
-	  font-size: 1.5rem;
-	}
+/* 📱 especialito detergente, moto e7 plus (~580px) */
+  @media (max-width: 580px) {
+    .bocetoimg {
+      width: 20%;
+    }
+
+    .contenido {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.1);
+    }
+    .sectionleft {
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .imgmedium {
+      width: 43%;        
+      max-width: 20rem;
+      border-radius: 0.5rem;
+      object-fit: cover;
+      margin-right: 2rem;
+      display: block;
+    }
+    .sectionheadline {
+      padding: 1rem;
+    }
+    .headlineimg {
+      width: 50%;
+      max-width: 18rem;
+      border-radius: 0.3rem;
+      object-fit: cover;
+    }
+    .introtext {
+      font-size:1.4rem ;
+    }
+    .sectionbelow .text{font-size: 0.7rem;}
+    .sectionleft .text,
+    .headlinetext{
+      font-size: 1.7rem;
+    }
   }
+
 /* 📱 iPhone 14 Pro Max, Galaxy S22 Ultra (~480px) */
   @media (max-width: 480px) {
-  	.subtitulo {
-	  font-size: 2rem;
-	  font-weight: bold;
-	  margin-bottom: 1rem;
-	}
-	.headlinetext {
-	  flex: 1;
-	  font-size: 1rem;
-	  font-weight: bold;
-	  text-transform: uppercase;
-	  color: #111;
-	  line-height: 1.4;
-	  text-align: center;
-	  font-family: 'Georgia', serif;
-	}
+    .introtext {
+      font-size:1.1rem ;
+    }
+    .sectionbelow .text{font-size: 0.5rem;}
   }
 /* 📱 iPhone SE, Galaxy A01 (~375px) */
  @media (max-width: 375px) {
-   	.introtext {
-	  flex: 1;
-	  font-size: 0.7rem;
-	  line-height: 1.8;
-	  color: #1c1e21;
-	  font-weight: bold;
-	}
-	.sectionleft .text {
-	  flex: 1;
-	  text-align: left;
-	  font-weight: bold;
-	  font-size: 1.5rem;
-	}
-	.headlinetext {
-	  flex: 1;
-	  font-size: 0.7rem;
-	  font-weight: bold;
-	  text-transform: uppercase;
-	  color: #111;
-	  line-height: 1.4;
-	  text-align: center;
-	  font-family: 'Georgia', serif;
-	}
+    .bocetoimg {
+      width: 40% ;
+    }
+    .introtext {
+      font-size:1rem ;
+    }
+    .sectionbelow .text{font-size: 0.5rem;}
+    .sectionleft .text,
+    .headlinetext{
+      font-size: 1.5rem;
+    }
  }
