@@ -1,7 +1,7 @@
 import './estilos/tomos.css';
 import { useState } from 'react';
-import { Routes, Route, Link, Navigate, useLocation,} from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { Routes, Route, Link, Navigate, useLocation} from 'react-router-dom';
 import img from './tomos/hojas/hcero/hoja-a.webp';
 import Cero from './tomos/cero.jsx';
 import donaciones from '../assets/donar.png';
@@ -109,7 +109,6 @@ const Tomos = () => {
             <Routes>
                 <Route path="Cero" element={
                     <>
-                        {/* 👇 CAMBIO: Metatags dinámicas para la ruta /Cero */}
                         <Helmet>
                             <title>Noticia - Tomo Cero</title>
                             <meta property="og:title" content="Tomo 0 (Especial) - Un Evento Decisivo" />
@@ -117,13 +116,11 @@ const Tomos = () => {
                             <meta property="og:image" content="https://ot-vers-tiras.vercel.app/imagenes/noticia1.jpg" />
                             <meta property="og:url" content="https://ot-vers-tiras.vercel.app/Cero" />
                             <meta property="og:type" content="article" />
-
                             <meta name="twitter:card" content="summary_large_image" />
                             <meta name="twitter:title" content="Tomo 0 (Especial) - Un Evento Decisivo" />
                             <meta name="twitter:description" content="Este es un especial que explica qué evento desató una cadena de cambios en tiempos futuros." />
                             <meta name="twitter:image" content="https://ot-vers-tiras.vercel.app/imagenes/noticia1.jpg" />
                         </Helmet>
-                        {/* 👆 Fin de los cambios para Helmet */}
                         
                         <Cero />
                     </>
