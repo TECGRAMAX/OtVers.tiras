@@ -100,15 +100,30 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.descripcion .almoadilla .redes{
+.descripcion .almoadilla .sociales{
     display: grid;
     grid-template-columns: [linea-1] 1fr;
     grid-template-rows: [fila-1] 0.2fr [fila-2] 0.8fr;
 }
-.redes p{
-    padding-top: 5rem;
+.sociales {
+  display: flex;
+  flex-direction: column; /* 🔑 Coloca los hijos en columna */
+  align-items: flex-start; /* opcional: alinear a la izquierda */
+  gap: 10px; /* espacio entre el texto y los íconos */
 }
-.almoadilla .redes .imagen{ 
+.sociales p{
+    padding-top: 5rem;
+    margin: 0;
+    font-weight: bold; /* opcional: resaltar */
+}
+
+.sociales .imagen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.almoadilla .sociales .imagen{ 
     padding: 1vh 0;
 }
 .imagen img{
@@ -118,9 +133,9 @@ h1{
     height: 30px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
-.almoadilla .redes .imagen img:hover{ 
+.imagen img:hover{ 
     padding: 1vh 0;
-     transform: translateY(-2px);
+    transform: translateY(-10px);
 }
 
 
