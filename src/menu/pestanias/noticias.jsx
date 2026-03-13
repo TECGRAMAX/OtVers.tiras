@@ -1,9 +1,11 @@
 import './estilos/noticias.css'
 import lilix from '../assets/integrados/lilix.webp'
+import parika from '../assets/integrados/blog/Parikapres.png'
 import tpd from '../assets/integrados/tpd-b.webp'
 import img1 from '../assets/actomos.png'
 
 import NotUno from './noticias/not-1.jsx'
+import NotDos from './noticias/not-2.jsx'
 
 import facebookLogo from '../assets/facebook.png'
 import instagramLogo from '../assets/instagram.png'
@@ -25,7 +27,22 @@ const Noticias = () => {
         { href: 'https://www.instagram.com/the.piggy.draws', logo: instagramLogo, alt: 'Instagram' },
         { href: 'https://twitter.com/thepiggydraws', logo: xLogo, alt: 'X/Twitter' },
       ],
-      abreNot: true,   // Esta tarjeta abre la sub‑ruta
+      abreNot: true,
+      ruta: 'NotUno',
+    },
+    {
+      titular: 'MUJER SAIYAN',
+      subtitulo: 'Personaje de la marca The piggy draws.',
+      noticia: 'Un Nuevo personaje ha llegado a OtVers, nuevamente de parte de la marca The piggy draws, una mujer saiyagin con diseño renovado.',
+      image: parika,
+      autorImg: tpd,
+      redes: [
+        { href: 'https://www.facebook.com/profile.php?id=61575106370554', logo: facebookLogo, alt: 'Facebook' },
+        { href: 'https://www.instagram.com/the.piggy.draws', logo: instagramLogo, alt: 'Instagram' },
+        { href: 'https://twitter.com/thepiggydraws', logo: xLogo, alt: 'X/Twitter' },
+      ],
+      abreNot: true,
+      ruta: 'NotDos',
     },
     {
       titular: 'TITULO',
@@ -45,18 +62,21 @@ const Noticias = () => {
       redes: [],
       abreNot: false,
     },
-  ]
+    ]
 
   const location = useLocation()
-  const esRutaNot = location.pathname.endsWith('/Noticias/NotUno') // detecta si estás en /Noticias/NotUno
+  const esRutaNot =
+    location.pathname.includes('/Noticias/NotUno') ||
+    location.pathname.includes('/Noticias/NotDos')
 
   return (
     <>
       <Routes>
-        <Route path="NotUno" element={<NotUno />} />   {/* sub‑ruta anidada -solo enlace usando variable principal- */}
+        <Route path="NotUno" element={<NotUno />} />
+        <Route path="NotDos" element={<NotDos />} />   {/* nueva sub‑ruta */}
       </Routes>
 
-      {!esRutaNot && ( // oculta la sección si la ruta es /Noticias/NotUno
+      {!esRutaNot && (
         <section className="Noticias">
           <h2>TODAS LAS NOTICIAS:</h2>
           <div className="cartas">
@@ -68,8 +88,8 @@ const Noticias = () => {
                 </article>
 
                 <div className="noticia">
-                  {card.abreNot ? (
-                    <Link to="NotUno">  
+                  {card.abreNot && card.ruta ? (
+                    <Link to={card.ruta}>
                       <img src={card.image} alt={card.titular} />
                     </Link>
                   ) : (
