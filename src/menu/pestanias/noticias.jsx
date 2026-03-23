@@ -2,10 +2,14 @@ import './estilos/noticias.css'
 import lilix from '../assets/integrados/lilix.webp'
 import parika from '../assets/integrados/blog/Parikapres.png'
 import tpd from '../assets/integrados/tpd-b.webp'
+
+import mellizas from '../assets/integrados/mellizas.webp'
+import syaf from '../assets/integrados/SaiyanYulickAF/portada.webp'
 import img1 from '../assets/actomos.png'
 
 import NotUno from './noticias/not-1.jsx'
 import NotDos from './noticias/not-2.jsx'
+import NotTres from './noticias/not-3.jsx'
 
 import facebookLogo from '../assets/facebook.png'
 import instagramLogo from '../assets/instagram.png'
@@ -16,19 +20,16 @@ import { Routes, Route, useLocation, Link } from 'react-router-dom'
 const Noticias = () => {
   const tarjetas = [
     {
-      titular: 'Lilix de Polymyr',
-      subtitulo: 'Personaje de la marca The piggy draws.',
-      noticia:
-        'Se ha llegado a un acuerdo con la marca para incluir a Lilix en otvers. Una extraterrestre de la raza Polymyr, de composición corporal libre del componente mineral óseo, siendo una masa libre y fácilmente moldeable; también cambia o modifica a voluntad la melamina de su cuerpo.',
-      image: lilix,
-      autorImg: tpd,
+      titular: 'MELLIZAS HÍBRIDAS',
+      subtitulo: 'Personaje perteneciente a Saiyan Yulick AF',
+      noticia: 'Un par de hermanas han sido incluídas a Otvers. Esta vez de un nuevo autor, dos personajes con similitud a un personaje muy conocido',
+      image: mellizas,
+      autorImg: syaf,
       redes: [
-        { href: 'https://www.facebook.com/profile.php?id=61575106370554', logo: facebookLogo, alt: 'Facebook' },
-        { href: 'https://www.instagram.com/the.piggy.draws', logo: instagramLogo, alt: 'Instagram' },
-        { href: 'https://twitter.com/thepiggydraws', logo: xLogo, alt: 'X/Twitter' },
+        { href: 'https://www.facebook.com/makio.jinatzuru', logo: facebookLogo, alt: 'Facebook' },
       ],
       abreNot: true,
-      ruta: 'NotUno',
+      ruta: 'NotTres',
     },
     {
       titular: 'MUJER SAIYAN',
@@ -45,13 +46,19 @@ const Noticias = () => {
       ruta: 'NotDos',
     },
     {
-      titular: 'TITULO',
-      subtitulo: 'Subtítulo',
-      noticia: 'NOTICIA ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...',
-      image: img1,
-      autorImg: null,
-      redes: [],
-      abreNot: false,
+      titular: 'Lilix de Polymyr',
+      subtitulo: 'Personaje de la marca The piggy draws.',
+      noticia:
+        'Se ha llegado a un acuerdo con la marca para incluir a Lilix en otvers. Una extraterrestre de la raza Polymyr, de composición corporal libre del componente mineral óseo, siendo una masa libre y fácilmente moldeable; también cambia o modifica a voluntad la melamina de su cuerpo.',
+      image: lilix,
+      autorImg: tpd,
+      redes: [
+        { href: 'https://www.facebook.com/profile.php?id=61575106370554', logo: facebookLogo, alt: 'Facebook' },
+        { href: 'https://www.instagram.com/the.piggy.draws', logo: instagramLogo, alt: 'Instagram' },
+        { href: 'https://twitter.com/thepiggydraws', logo: xLogo, alt: 'X/Twitter' },
+      ],
+      abreNot: true,
+      ruta: 'NotUno',
     },
     {
       titular: 'TITULO',
@@ -67,13 +74,15 @@ const Noticias = () => {
   const location = useLocation()
   const esRutaNot =
     location.pathname.includes('/Noticias/NotUno') ||
-    location.pathname.includes('/Noticias/NotDos')
+    location.pathname.includes('/Noticias/NotDos') ||
+    location.pathname.includes('/Noticias/NotTres')
 
   return (
     <>
       <Routes>
         <Route path="NotUno" element={<NotUno />} />
-        <Route path="NotDos" element={<NotDos />} />   {/* nueva sub‑ruta */}
+        <Route path="NotDos" element={<NotDos />} />
+        <Route path="NotTres" element={<NotTres />} />
       </Routes>
 
       {!esRutaNot && (

@@ -43,6 +43,9 @@ import veintiocho from './hojas/hcero/hoja-z-b.webp'
 import veintinueve from './hojas/hcero/hoja-z-c.webp'
 import treinta from './hojas/hcero/hoja-z-d.webp'
 import treintaiuno from './hojas/hcero/hoja-z-e.webp'
+import treintaidos from './hojas/hcero/hoja-z-f.webp'
+import treintaitres from './hojas/hcero/hoja-z-g.webp'
+import treintaicuatro from './hojas/hcero/hoja-z-h.webp'
 import vacio from '../../assets/atomos.png'
 const Hoja = () => {
     const [mostrarSubmenu, setMostrarSubmenu] = useState(false);
@@ -86,7 +89,10 @@ const Hoja = () => {
         { image: veintinueve, pagina: 'Pagina-29' },
         { image: treinta, pagina: 'Pagina-30' },
         { image: treintaiuno, pagina: 'Pagina-31' },
-        { image: vacio, pagina: '-' },
+        { image: treintaidos, pagina: 'Pagina-32' },
+        { image: treintaitres, pagina: 'Pagina-33' },
+        { image: treintaicuatro, pagina: 'Pagina-34' },
+        { image: vacio, pagina: '-' }, 
     ];
 
     const [tarjetaActiva, setTarjetaActiva] = useState(null)
