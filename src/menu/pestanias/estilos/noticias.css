@@ -132,12 +132,12 @@
     text-align: right;
     align-items: botom;
     color: #C8C8C8;
+    background: none;
 }
 .autor .autorImg{
    animation: none;
    width: 10rem;
 }
-
 .articulo .redImg{
    animation: none;
    width: 2rem;

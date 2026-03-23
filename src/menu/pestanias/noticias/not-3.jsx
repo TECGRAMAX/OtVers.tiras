@@ -1,6 +1,5 @@
 import '../estilos/blogdos.css'
 import { useState} from 'react';
-import { Helmet } from 'react-helmet-async';
 import perfil from '../../assets/integrados/SaiyanYulickAF/perfil.webp'
 import portada from '../../assets/integrados/SaiyanYulickAF/portada.webp'
 import boceto from '../../assets/integrados/SaiyanYulickAF/saf2.webp'
@@ -22,19 +21,6 @@ const Blog = () => {
 
   return (
     <div className="contenedor">
-      <Helmet>
-        <title>Blog - Lilix en OT.VERS</title>
-        <meta property="og:title" content="Lilix de Polymyr en OT.VERS" />
-        <meta property="og:description" content="Conoce a Lilix, personaje de la marca The Piggy Draws, ahora integrado en OT.VERS. Descubre su historia, habilidades y más." />
-        <meta property="og:image" content="https://ot-vers-tiras.vercel.app/imagenes/lilix-portada.jpg" />
-        <meta property="og:url" content="https://ot-vers-tiras.vercel.app/Blog" />
-        <meta property="og:type" content="article" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lilix de Polymyr en OT.VERS" />
-        <meta name="twitter:description" content="Conoce a Lilix, personaje de la marca The Piggy Draws, ahora integrado en OT.VERS. Descubre su historia, habilidades y más." />
-        <meta name="twitter:image" content="https://ot-vers-tiras.vercel.app/imagenes/lilix-portada.jpg" />
-      </Helmet>
       <div className="acomodo">
         <img src={portada} alt="Portada" className="portadaimg" />
         <img src={perfil} alt="Perfil" className="perfilimg" />

@@ -106,6 +106,7 @@ const Noticias = () => {
                   )}
 
                   <article className="articulo">
+                  
                     <h2>{card.noticia}</h2>
                     {card.autorImg && (
                       <p className="autor">
@@ -119,6 +120,7 @@ const Noticias = () => {
                         </a>
                       ))}
                     </div>
+
                   </article>
                 </div>
               </div>

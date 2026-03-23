@@ -25,7 +25,7 @@ const Blog = () => {
                       <div class="headline-bottom"><b>¡¡NO SE LO PIERDAN!!</b></div>`
 
   return (
-    <div className="contenedor">
+    <div className="blog">
       <Helmet>
         <title>Blog - Lilix en OT.VERS</title>
         <meta property="og:title" content="Lilix de Polymyr en OT.VERS" />
@@ -39,46 +39,47 @@ const Blog = () => {
         <meta name="twitter:description" content="Conoce a Lilix, personaje de la marca The Piggy Draws, ahora integrado en OT.VERS. Descubre su historia, habilidades y más." />
         <meta name="twitter:image" content="https://ot-vers-tiras.vercel.app/imagenes/lilix-portada.jpg" />
       </Helmet>
-      <div className="acomodo">
-        <img src={portada} alt="Portada" className="portadaimg" />
-        <img src={perfil} alt="Perfil" className="perfilimg" />
+      <div className="presentacion">
+        <img src={portada} alt="Portada" className="imgportada" />
+        <img src={perfil} alt="Perfil" className="imgperfil" />
       </div>
 
-      <div className="introsection">
-        <img src={boceto} alt="Boceto" className="bocetoimg" />
-        <div className="introtext" dangerouslySetInnerHTML={{ __html: textoIntro }} />
+      <div className="seccionint">
+        <img src={boceto} alt="Boceto" className="imgboceto"  />
+        <div className="textoint" dangerouslySetInnerHTML={{ __html: textoIntro }} />
       </div>
 
-      <div className="sub">
-        <div className="subtitulo" dangerouslySetInnerHTML={{ __html: subtitulo }} />
+      <div className="autor">
+        <div className="explica" dangerouslySetInnerHTML={{ __html: subtitulo }} />
       </div>
 
-      <div className="contenido">
+      <div className="mediosec">
 
 
-        <div className="sectionleft">
-          <div className="text" dangerouslySetInnerHTML={{ __html: textoRaza }} />
-          <img src={lilix} alt="Lilix" className="imgmedium" />
+        <div className="secderecha">
+          <div className="texto" dangerouslySetInnerHTML={{ __html: textoRaza }} />
+          <img src={lilix} alt="Lilix" className="imgmedio" />
         </div>
 
-        <div className="sectionbelow">
+        <div className="amplio">
           <img src={lilixidioma} alt="Lilix Idioma" className="imgwide" />
-          <div className="text" dangerouslySetInnerHTML={{ __html: textoIdioma }} />
+          <div className="texto" dangerouslySetInnerHTML={{ __html: textoIdioma }} />
         </div>
 
         <div className="sectionbelow">
-          <img src={lilixhabilidad} alt="Lilix Habilidad" className="imgwide" />
+          <img src={lilixhabilidad} alt="Lilix Habilidad" className="imgamp" />
           <div className="text" dangerouslySetInnerHTML={{ __html: textoHabilidad }} />
         </div>
 
       </div>
 
-      <div className="futer">
+      <div className="fondoprin">
 
-        <div className="sectionheadline">
-          <img src={lilixsaiyan} alt="Lilix Saiyan" className="headlineimg" />
-          <div className="headlinetext" dangerouslySetInnerHTML={{ __html: textoFinal }} />
+        <div className="fondo">
+          <img src={lilixsaiyan} alt="Lilix Saiyan" className="fondoimg" />
+          <div className="fondotexto" dangerouslySetInnerHTML={{ __html: textoFinal }} />
         </div>
+
       </div>
 
     </div>
