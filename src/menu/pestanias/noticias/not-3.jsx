@@ -12,7 +12,7 @@ const Blog = () => {
 
   const subtitulo = `<b>Explica su autor:</b>`
 
-  const textoRaza = `<b>Se saben que son híbridas de Saiyan, su apariencia es claramente similar a un Androide característico.</b>No se sabe más al respecto`
+  const textoRaza = `<b>Se sabe que son híbridas de Saiyan, de su apariencia que son claramente similares a un Androide característico.</b>No se sabe más al respecto`
 
   const textoIdioma = `<b>Diseño realizado por OtBot.</b>`
 

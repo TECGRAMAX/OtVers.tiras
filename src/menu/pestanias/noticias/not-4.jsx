@@ -8,15 +8,15 @@ import caracteristicas from '../../assets/integrados/SaiyanYulickAF/reinajotapeg
 import futer from '../../assets/integrados/reina.webp'
 
 const Blog = () => {
-  const textoIntro = `<b>Una nueva autora de nombre «Saiyan Yulick AF» nos ha enviado dos personajes «Las Mellizas».<br/>`
+  const textoIntro = `<b>La autora de nombre «Saiyan Yulick AF» nos ha enviado un nuevo personaje sin nombre, al cual denominamos «La Reina».<br/>`
 
   const subtitulo = `<b>Explica su autor:</b>`
 
-  const textoRaza = `<b>Se saben que son híbridas de Saiyan, su apariencia es claramente similar a un Androide característico.</b>No se sabe más al respecto`
+  const textoRaza = `<b>Se sabe que no es humana, de su apariencia se conoce su color de cabello morado y su vestido negro.</b>No se sabe más al respecto`
 
   const textoIdioma = `<b>Diseño realizado por OtBot.</b>`
 
-  const textoFinal = `<div class="headline-top"><b>¿Como apareceran las mellizas en OT.VERS.?</b></div>
+  const textoFinal = `<div class="headline-top"><b>¿Como aparecera la Reina en OT.VERS.?</b></div>
                       <div class="headline-bottom"><b>¡¡NO SE LO PIERDAN!!</b></div>`
 
   return (
