@@ -23,8 +23,8 @@ const Noticias = () => {
   const tarjetas = [
     {
       titular: 'REINA NO HUMANA',
-      subtitulo: 'Personaje perteneciente a Saiyan Yulick AF',
-      noticia: 'Un nuevo personaje ha sido incluído a Otvers. Nuevamente de Saiyan Yulick AF, un personaje qui inspira respeto y cultura.',
+      subtitulo: 'Personaje perteneciente a «Saiyan Yulick AF»',
+      noticia: 'Un nuevo personaje ha sido incluído a Otvers. Nuevamente de «Saiyan Yulick AF», un personaje que inspira respeto y cultura.',
       image: reina,
       autorImg: syaf,
       redes: [
@@ -47,8 +47,8 @@ const Noticias = () => {
     },
     {
       titular: 'MUJER SAIYAN',
-      subtitulo: 'Personaje de la marca The piggy draws.',
-      noticia: 'Un Nuevo personaje ha llegado a OtVers, nuevamente de parte de la marca The piggy draws, una mujer saiyagin con diseño renovado.',
+      subtitulo: 'Personaje de la marca «The piggy draws».',
+      noticia: 'Un Nuevo personaje ha llegado a OtVers, nuevamente de parte de la marca «The piggy draws», una mujer saiyagin con diseño renovado.',
       image: parika,
       autorImg: tpd,
       redes: [
@@ -61,7 +61,7 @@ const Noticias = () => {
     },
     {
       titular: 'Lilix de Polymyr',
-      subtitulo: 'Personaje de la marca The piggy draws.',
+      subtitulo: 'Personaje de la marca «The piggy draws».',
       noticia:
         'Se ha llegado a un acuerdo con la marca para incluir a Lilix en otvers. Una extraterrestre de la raza Polymyr, de composición corporal libre del componente mineral óseo, siendo una masa libre y fácilmente moldeable; también cambia o modifica a voluntad la melamina de su cuerpo.',
       image: lilix,
