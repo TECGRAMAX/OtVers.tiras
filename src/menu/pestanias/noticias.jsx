@@ -23,7 +23,7 @@ const Noticias = () => {
   const tarjetas = [
     {
       titular: 'REINA NO HUMANA',
-      subtitulo: 'Personaje perteneciente a «Saiyan Yulick AF»',
+      subtitulo: 'Personaje perteneciente a «SAIYAN Yulick AF»',
       noticia: 'Un nuevo personaje ha sido incluído a Otvers. Nuevamente de «Saiyan Yulick AF», un personaje que inspira respeto y cultura.',
       image: reina,
       autorImg: syaf,
@@ -35,7 +35,7 @@ const Noticias = () => {
     },
     {
       titular: 'MELLIZAS HÍBRIDAS',
-      subtitulo: 'Personaje perteneciente a Saiyan Yulick AF',
+      subtitulo: 'Personaje perteneciente a «SAIYAN Yulick AF»',
       noticia: 'Un par de hermanas han sido incluídas a Otvers. Esta vez de un nuevo autor, dos personajes con similitud a un personaje muy conocido',
       image: mellizas,
       autorImg: syaf,
@@ -47,8 +47,8 @@ const Noticias = () => {
     },
     {
       titular: 'MUJER SAIYAN',
-      subtitulo: 'Personaje de la marca «The piggy draws».',
-      noticia: 'Un Nuevo personaje ha llegado a OtVers, nuevamente de parte de la marca «The piggy draws», una mujer saiyagin con diseño renovado.',
+      subtitulo: 'Personaje de la marca «THE PIGGY DRAWS».',
+      noticia: 'Un Nuevo personaje ha llegado a OtVers, nuevamente de parte de la marca «The piggy draws», una mujer «saiyagin» con diseño renovado.',
       image: parika,
       autorImg: tpd,
       redes: [
@@ -61,9 +61,9 @@ const Noticias = () => {
     },
     {
       titular: 'Lilix de Polymyr',
-      subtitulo: 'Personaje de la marca «The piggy draws».',
+      subtitulo: 'Personaje de la marca «THE PIGGY DRAWS».',
       noticia:
-        'Se ha llegado a un acuerdo con la marca para incluir a Lilix en otvers. Una extraterrestre de la raza Polymyr, de composición corporal libre del componente mineral óseo, siendo una masa libre y fácilmente moldeable; también cambia o modifica a voluntad la melamina de su cuerpo.',
+        'Se ha llegado a un acuerdo con la marca para incluir a «Lilix» en otvers. Una extraterrestre de la raza «Polymyr», de composición corporal libre del componente mineral óseo, siendo una masa libre y fácilmente moldeable; también cambia o modifica a voluntad la melamina de su cuerpo.',
       image: lilix,
       autorImg: tpd,
       redes: [

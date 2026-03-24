@@ -11,7 +11,7 @@ import lilixsaiyan from '../../assets/integrados/lilix.webp'
 
 const Blog = () => {
   const textoIntro = `<b>Gracias al permiso del autor y su marca «The piggy draws» será añadida a otvers su personaje «Lilix de Polymyr».<br/>
-    Se ha llegado a un acuerdo con la marca para incluir a la extraterrestre Lilix en otvers.</b>`
+    Se ha llegado a un acuerdo con la marca para incluir a la «extraterrestre Lilix» en otvers.</b>`
 
   const subtitulo = `<b>Explica su autor:</b>`
 

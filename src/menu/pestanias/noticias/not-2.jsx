@@ -8,12 +8,12 @@ import parikacompleta from '../../assets/integrados/blog/Parikafondo.png'
 import fondo from '../../assets/integrados/blog/Parikapres.png'
 
 const Blog = () => {
-  const textoIntro = `<b>El autor y su marca «The piggy draws» nos trajo voluntariamente un nuevo personaje, esta vez de la raza SAIYAN.<br/>
+  const textoIntro = `<b>El autor y su marca «The piggy draws» nos trajo voluntariamente un nuevo personaje, esta vez de la raza «SAIYAN».<br/>
     Será incluida en una futura narrativa de otvers.</b>`
 
   const subtitulo = `<b>Explica su autor:</b>`
 
-  const textoRaza = `<b>De la raza Saiyan, no tiene más contenido más que su nombre: Parika.</b>`
+  const textoRaza = `<b>De la raza Saiyan, no tiene más contenido más que su nombre: «Parika».</b>`
 
   const textoIdioma = `<b>El diseño en digital es traido por Otbot.</b>`
 
