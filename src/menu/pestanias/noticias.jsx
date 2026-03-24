@@ -24,7 +24,7 @@ const Noticias = () => {
     {
       titular: 'REINA',
       subtitulo: 'Personaje perteneciente a Saiyan Yulick AF',
-      noticia: 'Un personaje femenino muy interesante.',
+      noticia: 'Un nuevo personaje ha sido incluído a Otvers. Nuevamente de Saiyan Yulick AF, un personaje qui inspira respeto y cultura.',
       image: reina,
       autorImg: syaf,
       redes: [
