@@ -8,7 +8,7 @@ import caracteristicas from '../../assets/integrados/SaiyanYulickAF/reinajotapeg
 import futer from '../../assets/integrados/reina.webp'
 
 const Blog = () => {
-  const textoIntro = `<b>La autora de nombre «Saiyan Yulick AF» nos ha enviado un nuevo personaje sin nombre, al cual denominamos «La Reina».<br/>`
+  const textoIntro = `<b>La autora «Saiyan Yulick AF» nos ha enviado un nuevo personaje sin nombre, al cual denominamos «La Reina».<br/>`
 
   const subtitulo = `<b>Explica su autor:</b>`
 

@@ -22,7 +22,7 @@ import { Routes, Route, useLocation, Link } from 'react-router-dom'
 const Noticias = () => {
   const tarjetas = [
     {
-      titular: 'REINA',
+      titular: 'REINA NO HUMANA',
       subtitulo: 'Personaje perteneciente a Saiyan Yulick AF',
       noticia: 'Un nuevo personaje ha sido incluído a Otvers. Nuevamente de Saiyan Yulick AF, un personaje qui inspira respeto y cultura.',
       image: reina,
