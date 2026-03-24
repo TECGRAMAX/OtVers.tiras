@@ -4,12 +4,14 @@ import parika from '../assets/integrados/blog/Parikapres.png'
 import tpd from '../assets/integrados/tpd-b.webp'
 
 import mellizas from '../assets/integrados/mellizas.webp'
+import reina from '../assets/integrados/reina.webp'
 import syaf from '../assets/integrados/SaiyanYulickAF/portada.webp'
 import img1 from '../assets/actomos.png'
 
 import NotUno from './noticias/not-1.jsx'
 import NotDos from './noticias/not-2.jsx'
 import NotTres from './noticias/not-3.jsx'
+import NotCuatro from './noticias/not-4.jsx'
 
 import facebookLogo from '../assets/facebook.png'
 import instagramLogo from '../assets/instagram.png'
@@ -19,6 +21,18 @@ import { Routes, Route, useLocation, Link } from 'react-router-dom'
 
 const Noticias = () => {
   const tarjetas = [
+    {
+      titular: 'REINA',
+      subtitulo: 'Personaje perteneciente a Saiyan Yulick AF',
+      noticia: 'Un personaje femenino muy interesante.',
+      image: reina,
+      autorImg: syaf,
+      redes: [
+        { href: 'https://www.facebook.com/makio.jinatzuru', logo: facebookLogo, alt: 'Facebook' },
+      ],
+      abreNot: true,
+      ruta: 'NotCuatro',
+    },
     {
       titular: 'MELLIZAS HÍBRIDAS',
       subtitulo: 'Personaje perteneciente a Saiyan Yulick AF',
@@ -75,7 +89,8 @@ const Noticias = () => {
   const esRutaNot =
     location.pathname.includes('/Noticias/NotUno') ||
     location.pathname.includes('/Noticias/NotDos') ||
-    location.pathname.includes('/Noticias/NotTres')
+    location.pathname.includes('/Noticias/NotTres') ||
+    location.pathname.includes('/Noticias/NotCuatro')
 
   return (
     <>
@@ -83,6 +98,7 @@ const Noticias = () => {
         <Route path="NotUno" element={<NotUno />} />
         <Route path="NotDos" element={<NotDos />} />
         <Route path="NotTres" element={<NotTres />} />
+        <Route path="NotCuatro" element={<NotCuatro />} />
       </Routes>
 
       {!esRutaNot && (
