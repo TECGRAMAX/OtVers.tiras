@@ -2,7 +2,7 @@ import '../estilos/blogdos.css'
 import { useState} from 'react';
 import perfil from '../../assets/integrados/SaiyanYulickAF/perfil.webp'
 import portada from '../../assets/integrados/SaiyanYulickAF/portada.webp'
-import boceto from '../../assets/integrados/SaiyanYulickAF/ochenterajotapegeotravez(1).webp'
+import boceto from '../../assets/integrados/SaiyanYulickAF/ochenterasketch.webp'
 import presentacion from '../../assets/integrados/SaiyanYulickAF/ochentera.webp'
 import caracteristicas from '../../assets/integrados/SaiyanYulickAF/ochenterajotapegeotravez.webp'
 import futer from '../../assets/integrados/ochentera.webp'
