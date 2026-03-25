@@ -8,15 +8,15 @@ import caracteristicas from '../../assets/integrados/SaiyanYulickAF/ochenterajot
 import futer from '../../assets/integrados/ochentera.webp'
 
 const Blog = () => {
-  const textoIntro = `<b>La autora «Saiyan Yulick AF» nos ha enviado un nuevo personaje sin nombre, al cual denominamos «La Reina».<br/>`
+  const textoIntro = `<b>La autora «Saiyan Yulick AF» nos ha enviado un nuevo personaje sin Dato alguno, al cual denominamos «La Mujer Ochentera».<br/>`
 
   const subtitulo = `<b>Explica su autor:</b>`
 
-  const textoRaza = `<b>Se sabe que no es humana, de su apariencia se conoce su color de cabello morado y su vestido negro.</b>No se sabe más al respecto`
+  const textoRaza = `<b>Se sabe que es humana por su apariencia.</b>No se sabe más al respecto`
 
   const textoIdioma = `<b>Diseño realizado por OtBot.</b>`
 
-  const textoFinal = `<div class="headline-top"><b>¿Como aparecera la Reina en OT.VERS.?</b></div>
+  const textoFinal = `<div class="headline-top"><b>¿Como aparecera la Mujer Ochentera en OT.VERS.?</b></div>
                       <div class="headline-bottom"><b>¡¡NO SE LO PIERDAN!!</b></div>`
 
   return (
@@ -93,9 +93,9 @@ export default Blog
           {/* Texto con efecto de escritura *//*
           <article className="blog-text">
             <p>{texto}</p>
-          </article>
         </div>
       </section>
+          </article>
     )
   }
 */
