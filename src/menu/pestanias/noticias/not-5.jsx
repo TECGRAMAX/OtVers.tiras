@@ -2,10 +2,10 @@ import '../estilos/blogdos.css'
 import { useState} from 'react';
 import perfil from '../../assets/integrados/SaiyanYulickAF/perfil.webp'
 import portada from '../../assets/integrados/SaiyanYulickAF/portada.webp'
-import boceto from '../../assets/integrados/SaiyanYulickAF/ochenterajotapegeotravez(1).webp'
-import presentacion from '../../assets/integrados/SaiyanYulickAF/ochentera.webp'
-import caracteristicas from '../../assets/integrados/SaiyanYulickAF/ochenterajotapegeotravez.webp'
-import futer from '../../assets/integrados/ochentera.webp'
+import boceto from '../../assets/integrados/SaiyanYulickAF/sketchreina.webp'
+import presentacion from '../../assets/integrados/SaiyanYulickAF/reina.webp'
+import caracteristicas from '../../assets/integrados/SaiyanYulickAF/reinajotapegeotravez.webp'
+import futer from '../../assets/integrados/reina.webp'
 
 const Blog = () => {
   const textoIntro = `<b>La autora «Saiyan Yulick AF» nos ha enviado un nuevo personaje sin nombre, al cual denominamos «La Reina».<br/>`

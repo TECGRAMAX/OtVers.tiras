@@ -27,7 +27,7 @@ const Noticias = () => {
       titular: 'SEÑORITA CON DISEÑO OCHENTERO',
       subtitulo: 'Personaje perteneciente a «SAIYAN Yulick AF»',
       noticia: 'Un nuevo personaje ha sido incluído a Otvers. Nuevamente de «Saiyan Yulick AF», un personaje que muestra elegancia.',
-      image: reina,
+      image: oche,
       autorImg: syaf,
       redes: [
         { href: 'https://www.facebook.com/makio.jinatzuru', logo: facebookLogo, alt: 'Facebook' },
@@ -114,7 +114,7 @@ const Noticias = () => {
         <Route path="NotDos" element={<NotDos />} />
         <Route path="NotTres" element={<NotTres />} />
         <Route path="NotCuatro" element={<NotCuatro />} />
-        <Route path="NotCuatro" element={<NotCinco />} />
+        <Route path="NotCinco" element={<NotCinco />} />
       </Routes>
 
       {!esRutaNot && (
