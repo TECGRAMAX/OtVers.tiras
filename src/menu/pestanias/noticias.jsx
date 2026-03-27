@@ -6,6 +6,7 @@ import tpd from '../assets/integrados/tpd-b.webp'
 import mellizas from '../assets/integrados/mellizas.webp'
 import reina from '../assets/integrados/reina.webp'
 import oche from '../assets/integrados/ochentera.webp'
+import exp from '../assets/integrados/exploradora.webp'
 import syaf from '../assets/integrados/SaiyanYulickAF/portada.webp'
 import img1 from '../assets/actomos.png'
 
@@ -14,6 +15,7 @@ import NotDos from './noticias/not-2.jsx'
 import NotTres from './noticias/not-3.jsx'
 import NotCuatro from './noticias/not-4.jsx'
 import NotCinco from './noticias/not-5.jsx'
+import NotSeis from './noticias/not-6.jsx'
 
 import facebookLogo from '../assets/facebook.png'
 import instagramLogo from '../assets/instagram.png'
@@ -23,6 +25,18 @@ import { Routes, Route, useLocation, Link } from 'react-router-dom'
 
 const Noticias = () => {
   const tarjetas = [
+    {
+      titular: 'SEÑORITA EXPLORADORA',
+      subtitulo: 'Personaje perteneciente a «SAIYAN Yulick AF»',
+      noticia: 'Un nuevo personaje ha sido incluído a Otvers. Nuevamente de «Saiyan Yulick AF», un personaje algo descuidado en apariencia.',
+      image: exp,
+      autorImg: syaf,
+      redes: [
+        { href: 'https://www.facebook.com/makio.jinatzuru', logo: facebookLogo, alt: 'Facebook' },
+      ],
+      abreNot: true,
+      ruta: 'NotSeis',
+    },
     {
       titular: 'SEÑORITA CON DISEÑO OCHENTERO',
       subtitulo: 'Personaje perteneciente a «SAIYAN Yulick AF»',
@@ -105,7 +119,8 @@ const Noticias = () => {
     location.pathname.includes('/Noticias/NotDos') ||
     location.pathname.includes('/Noticias/NotTres') ||
     location.pathname.includes('/Noticias/NotCuatro') ||
-    location.pathname.includes('/Noticias/NotCinco')
+    location.pathname.includes('/Noticias/NotCinco') ||
+    location.pathname.includes('/Noticias/NotSeis')
 
   return (
     <>
@@ -115,6 +130,7 @@ const Noticias = () => {
         <Route path="NotTres" element={<NotTres />} />
         <Route path="NotCuatro" element={<NotCuatro />} />
         <Route path="NotCinco" element={<NotCinco />} />
+        <Route path="NotCinco" element={<NotSeis />} />
       </Routes>
 
       {!esRutaNot && (
