@@ -130,7 +130,7 @@ const Noticias = () => {
         <Route path="NotTres" element={<NotTres />} />
         <Route path="NotCuatro" element={<NotCuatro />} />
         <Route path="NotCinco" element={<NotCinco />} />
-        <Route path="NotCinco" element={<NotSeis />} />
+        <Route path="NotSeis" element={<NotSeis />} />
       </Routes>
 
       {!esRutaNot && (
