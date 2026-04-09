@@ -2,12 +2,14 @@ import './estilos/noticias.css'
 import lilix from '../assets/integrados/lilix.webp'
 import parika from '../assets/integrados/blog/Parikapres.png'
 import tpd from '../assets/integrados/tpd-b.webp'
+import syaf from '../assets/integrados/SaiyanYulickAF/portada.webp'
+import pride from '../assets/integrados/SaiyanJeanPride/portada.webp'
 
 import mellizas from '../assets/integrados/mellizas.webp'
 import reina from '../assets/integrados/reina.webp'
 import oche from '../assets/integrados/ochentera.webp'
 import exp from '../assets/integrados/exploradora.webp'
-import syaf from '../assets/integrados/SaiyanYulickAF/portada.webp'
+import jean from '../assets/integrados/jeanprin.webp'
 import img1 from '../assets/actomos.png'
 
 import NotUno from './noticias/not-1.jsx'
@@ -16,15 +18,32 @@ import NotTres from './noticias/not-3.jsx'
 import NotCuatro from './noticias/not-4.jsx'
 import NotCinco from './noticias/not-5.jsx'
 import NotSeis from './noticias/not-6.jsx'
+import NotSiete from './noticias/not-7.jsx'
 
 import facebookLogo from '../assets/facebook.png'
 import instagramLogo from '../assets/instagram.png'
 import xLogo from '../assets/donarx.png'
+import gsites from '../assets/sites.png'
 
 import { Routes, Route, useLocation, Link } from 'react-router-dom'
 
 const Noticias = () => {
   const tarjetas = [
+    {
+      titular: 'Saiyagin Jean',
+      subtitulo: 'Personaje de la marca «JEAN SAYAN PRIDE».',
+      noticia:
+        'Se ha llegado a un acuerdo con la marca para incluir a «Jean» en otvers. De la raza Saiyan ambientado en planeta Saiyan en el año 3031, bajo el regente del universo Acit.',
+      image: jean,
+      autorImg: pride,
+      redes: [
+        { href: 'https://www.facebook.com/jeanpiere.apaza.3', logo: facebookLogo, alt: 'Facebook' },
+        { href: 'https://www.instagram.com/sayan_pride', logo: instagramLogo, alt: 'Instagram' },
+        { href: 'https://sites.google.com/view/sayan-pride-manga/cap%C3%ADtulos-a-color', logo: gsites, alt: 'google-sites' },
+      ],
+      abreNot: true,
+      ruta: 'NotSiete',
+    },
     {
       titular: 'SEÑORITA EXPLORADORA',
       subtitulo: 'Personaje perteneciente a «SAIYAN Yulick AF»',
@@ -120,7 +139,8 @@ const Noticias = () => {
     location.pathname.includes('/Noticias/NotTres') ||
     location.pathname.includes('/Noticias/NotCuatro') ||
     location.pathname.includes('/Noticias/NotCinco') ||
-    location.pathname.includes('/Noticias/NotSeis')
+    location.pathname.includes('/Noticias/NotSeis') ||
+    location.pathname.includes('/Noticias/NotSiete')
 
   return (
     <>
@@ -131,6 +151,7 @@ const Noticias = () => {
         <Route path="NotCuatro" element={<NotCuatro />} />
         <Route path="NotCinco" element={<NotCinco />} />
         <Route path="NotSeis" element={<NotSeis />} />
+        <Route path="NotSiete" element={<NotSiete />} />
       </Routes>
 
       {!esRutaNot && (

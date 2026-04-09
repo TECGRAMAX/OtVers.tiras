@@ -46,6 +46,7 @@ import treintaiuno from './hojas/hcero/hoja-z-e.webp'
 import treintaidos from './hojas/hcero/hoja-z-f.webp'
 import treintaitres from './hojas/hcero/hoja-z-g.webp'
 import treintaicuatro from './hojas/hcero/hoja-z-h.webp'
+import treintaicinco from './hojas/hcero/hoja-z-i.webp'
 import vacio from '../../assets/atomos.png'
 const Hoja = () => {
     const [mostrarSubmenu, setMostrarSubmenu] = useState(false);
@@ -92,6 +93,7 @@ const Hoja = () => {
         { image: treintaidos, pagina: 'Pagina-32' },
         { image: treintaitres, pagina: 'Pagina-33' },
         { image: treintaicuatro, pagina: 'Pagina-34' },
+        { image: treintaicinco, pagina: 'Pagina-35' },
         { image: vacio, pagina: '-' }, 
     ];
 
