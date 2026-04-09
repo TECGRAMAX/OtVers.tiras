@@ -14,7 +14,7 @@ const Blog = () => {
 
   const subtitulo = `<b>Explica su autor:</b>`
 
-  const textoRaza = `<b>De la raza Saiyan en el año 3031, donde la proninciación cambió a «Sayan» del planeta Vegeta (Ajeno al planeta Vegeta del canon), bajo el regente del universo Acit.</b>`
+  const textoRaza = `<b>De la raza Saiyan en el año 3031, donde la pronunciación cambió a «Sayan» del planeta Vegeta (Ajeno al planeta Vegeta del canon), bajo el regente del universo Acit.</b>`
 
   const textoIdioma = `<b>En esta línea la Transformación del Super Saiyan Ordinario, es muy común.</b> Diseño por Otbot`
 
