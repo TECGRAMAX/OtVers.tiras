@@ -9,16 +9,16 @@ import jeandos from '../../assets/integrados/SaiyanJeanPride/jeantercero.webp'
 import jeantres from '../../assets/integrados/jeanprin.webp'
 
 const Blog = () => {
-  const textoIntro = `<b>Gracias al permiso del autor y su marca «SAYAN PRIDE» será añadido a otvers el primer guerrero Saiyan «Jean».<br/>
+  const textoIntro = `<b>Gracias al permiso del autor y su marca «SAYAN PRIDE» será añadido a otvers el primer guerrero SAYAN «Jean».<br/>
     Saiyan futurista con buena conducta.</b>`
 
   const subtitulo = `<b>Explica su autor:</b>`
 
-  const textoRaza = `<b>De la raza Saiyan en el año 3031, del planeta Saiyan, bajo el regente del universo Acit.</b>`
+  const textoRaza = `<b>De la raza Saiyan en el año 3031, donde la proninciación cambió a «Sayan» del planeta Vegeta (Ajeno al planeta Vegeta del canon), bajo el regente del universo Acit.</b>`
 
-  const textoIdioma = `<b>La Transformación del Super Saiyan Ordinario es muy común.</b> Diseño por Otbot`
+  const textoIdioma = `<b>En esta línea la Transformación del Super Saiyan Ordinario, es muy común.</b> Diseño por Otbot`
 
-  const textoHabilidad = `<b>Para aumentar su control de la misma, Jean viaja a la tierra en una misión y entrena con Kamisama</b> Diseño por Otbot`
+  const textoHabilidad = `<b>Para aumentar su control de la misma, a Jean le ordenan viajar a la tierra en la misión de «estar de vacaciones» donde entrena con Kamisama</b> Diseño por Otbot`
 
   const textoFinal = `<div class="headline-top"><b>¿Como aparecera JEAN en OT.VERS.?</b></div>
                       <div class="headline-bottom"><b>¡¡NO SE LO PIERDAN!!</b></div>`
