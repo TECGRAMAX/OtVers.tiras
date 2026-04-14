@@ -4,12 +4,14 @@ import parika from '../assets/integrados/blog/Parikapres.png'
 import tpd from '../assets/integrados/tpd-b.webp'
 import syaf from '../assets/integrados/SaiyanYulickAF/portada.webp'
 import pride from '../assets/integrados/SaiyanJeanPride/portada.webp'
+import javier from '../assets/integrados/JavierRosero/portada.webp'
 
 import mellizas from '../assets/integrados/mellizas.webp'
 import reina from '../assets/integrados/reina.webp'
 import oche from '../assets/integrados/ochentera.webp'
 import exp from '../assets/integrados/exploradora.webp'
 import jean from '../assets/integrados/jeanprin.webp'
+import atreintaicinco from '../assets/integrados/a35prin.webp'
 import img1 from '../assets/actomos.png'
 
 import NotUno from './noticias/not-1.jsx'
@@ -19,6 +21,7 @@ import NotCuatro from './noticias/not-4.jsx'
 import NotCinco from './noticias/not-5.jsx'
 import NotSeis from './noticias/not-6.jsx'
 import NotSiete from './noticias/not-7.jsx'
+import NotOcho from './noticias/not-8.jsx'
 
 import facebookLogo from '../assets/facebook.png'
 import instagramLogo from '../assets/instagram.png'
@@ -29,6 +32,18 @@ import { Routes, Route, useLocation, Link } from 'react-router-dom'
 
 const Noticias = () => {
   const tarjetas = [
+    {
+      titular: 'EL ANDROIDE 35',
+      subtitulo: 'Personaje perteneciente a «JAVIER ROSERO»',
+      noticia: 'Un nuevo personaje ha sido incluído a Otvers. Esta vez del autor «JAVIER ROSERO», un androide hubicado luego de la saga de Moro en Dragonball Super.',
+      image: atreintaicinco,
+      autorImg: javier,
+      redes: [
+        { href: 'https://www.facebook.com/jaiver.rosero.731798', logo: facebookLogo, alt: 'Facebook' },
+      ],
+      abreNot: true,
+      ruta: 'NotOcho',
+    },
     {
       titular: 'Saiyagin Jean',
       subtitulo: 'Personaje de la marca «JEAN SAYAN PRIDE».',
@@ -140,7 +155,8 @@ const Noticias = () => {
     location.pathname.includes('/Noticias/NotCuatro') ||
     location.pathname.includes('/Noticias/NotCinco') ||
     location.pathname.includes('/Noticias/NotSeis') ||
-    location.pathname.includes('/Noticias/NotSiete')
+    location.pathname.includes('/Noticias/NotSiete') ||
+    location.pathname.includes('/Noticias/NotOcho')
 
   return (
     <>
@@ -152,6 +168,7 @@ const Noticias = () => {
         <Route path="NotCinco" element={<NotCinco />} />
         <Route path="NotSeis" element={<NotSeis />} />
         <Route path="NotSiete" element={<NotSiete />} />
+        <Route path="NotOcho" element={<NotOcho />} />
       </Routes>
 
       {!esRutaNot && (
