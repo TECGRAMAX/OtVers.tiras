@@ -60,7 +60,7 @@ const Hoja = () => {
         { image: portada, pagina: 'PORTADA' },
         { image: anuncio, pagina: 'PROPAGANDA' },
         { image: destitulada, pagina: 'DESTITULADA' },
-        { image: cero, pagina: 'Prologo' }
+        { image: cero, pagina: 'Prologo' },
         { image: uno, pagina: 'Pagina-01' },
         { image: dos, pagina: 'Pagina-02' },
         { image: tres, pagina: 'Pagina-03' },
