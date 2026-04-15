@@ -48,7 +48,7 @@ const Noticias = () => {
       titular: 'Saiyagin Jean',
       subtitulo: 'Personaje de la marca «JEAN SAYAN PRIDE».',
       noticia:
-        'Se ha llegado a un acuerdo con la marca para incluir a «Jean» en otvers. De la raza Saiyan ambientado en planeta Saiyan en el año 3031, bajo el regente del universo Acit.',
+        'Se ha llegado a un acuerdo con la marca para incluir a «Jean» en otvers. De la raza «Sayan» ambientado en planeta Vegeta en el año 3031, bajo el regente del universo Acit.',
       image: jean,
       autorImg: pride,
       redes: [

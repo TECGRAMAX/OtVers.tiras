@@ -12,7 +12,7 @@ const Blog = () => {
 
   const subtitulo = `<b>Explica su autor:</b>`
 
-  const textoRaza = `Se sabe que no es un Androide hubicado luego de la saga de Moro, según nos lo describen, es realizado por el difunto Dr Gero. No se sabe más al respecto`
+  const textoRaza = `Se sabe que es un Androide hubicado luego de la saga de Moro, según nos lo describen, es realizado por el difunto Dr Gero. No se sabe más al respecto`
 
   const textoIdioma = `<b>Diseño realizado por OtBot.</b>`
 
